@@ -12,8 +12,8 @@ Phase: Streamed SOG Baseline B and Active-Splat Envelope
 - [x] Add active-splat envelope analyzer.
 - [x] Update mobile URL helper for Phase 3 result names.
 - [x] Update docs with Phase 3 status, blockers, and exact commands.
-- [ ] Run validation commands and record pass/fail.
-- [ ] Upload clean project files to `PexaQ/sogx`, excluding ignored local assets and result binaries.
+- [x] Run validation commands and record pass/fail.
+- [x] Upload clean project files to `PexaQ/sogx`, excluding ignored local assets and result binaries.
 
 Open evidence items:
 
