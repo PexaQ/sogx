@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "methods": [
+    {
+      "id": "baselineA_bundled_sog_default",
+      "name": "Baseline A Bundled SOG Default",
+      "assetKind": "bundled-sog",
+      "controllerEnabled": false,
+      "adaptiveEnabled": false,
+      "lodEnabled": false,
+      "splatBudget": null,
+      "query": "scene=kaliurang&asset=/assets/scenes/kaliurang/scene.sog&mode=baselineA&duration=30&autoExport=server&resultEndpoint=/api/save-run&route=orbit-demo&captureScreenshot=true&resultName=kaliurang_baselineA_bundled_sog_default",
+      "notes": "Bundled SOG default rendering. Historical Phase 2 results must not be overwritten."
+    },
+    {
+      "id": "baselineB_streamed_sog_default",
+      "name": "Baseline B Streamed SOG Default",
+      "assetKind": "streamed-sog",
+      "controllerEnabled": false,
+      "adaptiveBudget": false,
+      "adaptiveDpr": false,
+      "adaptiveLod": false,
+      "splatBudget": null,
+      "lodRangeMin": null,
+      "lodRangeMax": null,
+      "minPixelSize": null,
+      "minContribution": null,
+      "query": "scene=kaliurang&asset=/assets/scenes/kaliurang/streamed/aggressive_sh0/lod-meta.json&mode=baselineB&duration=30&autoExport=server&resultEndpoint=/api/save-run&route=orbit-demo&captureScreenshot=true&resultName=kaliurang_aggressive_sh0_baselineB_streamed_sog_default",
+      "status": "prepared-pending-streamed-sog",
+      "notes": "Load lod-meta.json with default PlayCanvas LOD behavior. No adaptive controller and no static budget."
+    },
+    {
+      "id": "static_budget_sweep",
+      "name": "Static Splat Budget Sweep",
+      "assetKind": "streamed-sog",
+      "controllerEnabled": false,
+      "budgets": [1000000, 750000, 500000, 250000, 150000, 100000, 75000, 50000, 25000],
+      "queryTemplate": "scene=kaliurang&asset=/assets/scenes/kaliurang/streamed/aggressive_sh0/lod-meta.json&mode=staticBudget_{budget}&duration=30&autoExport=server&resultEndpoint=/api/save-run&route=orbit-demo&captureScreenshot=true&resultName=kaliurang_aggressive_sh0_budget{budget}",
+      "notes": "Static measurement modes for active-splat envelope discovery. These are not adaptive candidates."
+    },
+    {
+      "id": "lod_clamp_sweep",
+      "name": "LOD Range Clamp Sweep",
+      "assetKind": "streamed-sog",
+      "controllerEnabled": false,
+      "modes": ["lodClamp_coarseOnly", "lodClamp_noLOD0", "lodClamp_noLOD0_noLOD1", "lodClamp_midOnly", "lodClamp_default"],
+      "queryTemplate": "scene=kaliurang&asset=/assets/scenes/kaliurang/streamed/aggressive_sh0/lod-meta.json&mode={mode}&duration=30&autoExport=server&resultEndpoint=/api/save-run&route=orbit-demo&captureScreenshot=true&resultName=kaliurang_aggressive_sh0_{mode}",
+      "notes": "Static LOD clamp modes. No adaptive controller, no dynamic DPR, no motion-aware quality."
+    },
+    {
+      "id": "baselineA-kaliurang",
+      "name": "Phase 2 Baseline A Kaliurang Bundled SOG",
+      "assetKind": "bundled-sog",
+      "query": "scene=kaliurang&asset=/assets/scenes/kaliurang/scene.sog&mode=baselineA&duration=30&autoExport=server&resultEndpoint=/api/save-run&route=orbit-demo&captureScreenshot=true"
+    },
+    {
+      "id": "baselineB-kaliurang-prepared",
+      "name": "Phase 2 Baseline B Kaliurang Streamed SOG Prepared Only",
+      "assetKind": "streamed-sog",
+      "query": "scene=kaliurang&asset=/assets/scenes/kaliurang/lod-meta.json&mode=baselineB&duration=30&autoExport=server&resultEndpoint=/api/save-run&route=orbit-demo",
+      "status": "prepared-only-no-lod-meta"
+    },
+    {
+      "id": "baseline-a",
+      "name": "Bundled SOG",
+      "assetKind": "bundled",
+      "query": "asset=bundled&method=baseline-a&renderer=auto&canvasAntialias=false"
+    },
+    {
+      "id": "baseline-b",
+      "name": "Default Streamed SOG",
+      "assetKind": "streamed",
+      "query": "asset=streamed&method=baseline-b&renderer=auto&canvasAntialias=false"
+    },
+    {
+      "id": "baseline-c-500k",
+      "name": "Streamed SOG Static Mobile Budget 500k",
+      "assetKind": "streamed",
+      "query": "asset=streamed&method=baseline-c&splatBudget=500000&renderer=auto&canvasAntialias=false"
+    },
+    {
+      "id": "baseline-d-sh0",
+      "name": "Bundled SOG Low SH / SH0",
+      "assetKind": "bundled",
+      "query": "asset=bundled&method=baseline-d&variant=sh0&renderer=auto&canvasAntialias=false"
+    },
+    {
+      "id": "baseline-e-opacity-pruned",
+      "name": "Bundled SOG Opacity/NaN Pruned",
+      "assetKind": "bundled",
+      "query": "asset=bundled&method=baseline-e&variant=opacity-0.01&renderer=auto&canvasAntialias=false"
+    },
+    {
+      "id": "baseline-f-low-dpr",
+      "name": "Low DPR Fill-Rate Mode",
+      "assetKind": "streamed",
+      "query": "asset=streamed&method=baseline-f&dpr=0.75&canvasAntialias=false&antiAlias=false&renderer=auto"
+    },
+    {
+      "id": "candidate-adaptive-budget",
+      "name": "Adaptive Splat Budget Controller",
+      "assetKind": "streamed",
+      "query": "asset=streamed&method=adaptive-budget&splatBudget=650000&minBudget=150000&maxBudget=1200000&targetFps=24&renderer=auto&canvasAntialias=false"
+    },
+    {
+      "id": "candidate-network-aware-stream",
+      "name": "Network-Aware Coarse-First Stream Unlock",
+      "assetKind": "streamed",
+      "query": "asset=streamed&method=network-aware-stream&splatBudget=650000&startSplatBudget=250000&startDpr=0.75&unlockAfterSeconds=0.25&unlockStepSeconds=1.0&targetFps=24&renderer=auto&canvasAntialias=false"
+    },
+    {
+      "id": "candidate-visibility-decimation",
+      "name": "Route-Aware Visibility Decimation 25pct",
+      "assetKind": "bundled",
+      "query": "asset=bundled&method=visibility-decimation&variant=visibility-25pct&renderer=auto&canvasAntialias=false"
+    },
+    {
+      "id": "candidate-contribution-culling",
+      "name": "Contribution / Screen-Space Culling",
+      "assetKind": "streamed",
+      "query": "asset=streamed&method=contribution-culling&splatBudget=500000&minPixelSize=0.75&minContribution=0.0001&alphaClipForward=0.003&renderer=auto&canvasAntialias=false&antiAlias=false"
+    }
+  ]
+}

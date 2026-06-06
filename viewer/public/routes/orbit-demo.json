@@ -1,0 +1,12 @@
+{
+  "name": "orbit-demo",
+  "units": "meters",
+  "duration": 30,
+  "keyframes": [
+    { "t": 0, "position": [0, 1.5, 4], "target": [0, 1.2, 0], "fov": 65 },
+    { "t": 7.5, "position": [3, 1.6, 2], "target": [0, 1.2, 0], "fov": 65 },
+    { "t": 15, "position": [0, 1.7, -4], "target": [0, 1.2, 0], "fov": 65 },
+    { "t": 22.5, "position": [-3, 1.6, 2], "target": [0, 1.2, 0], "fov": 65 },
+    { "t": 30, "position": [0, 1.5, 4], "target": [0, 1.2, 0], "fov": 65 }
+  ]
+}

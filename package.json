@@ -1,0 +1,24 @@
+{
+  "name": "lowendgs",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Adaptive Streamed Gaussian Splatting benchmarks for low-end mobile web devices.",
+  "workspaces": [
+    "viewer"
+  ],
+  "scripts": {
+    "benchmark:serve": "node scripts/benchmark/serve-viewer.mjs",
+    "viewer:dev": "npm --workspace viewer run dev",
+    "viewer:build": "npm --workspace viewer run build",
+    "viewer:preview": "npm --workspace viewer run preview",
+    "viewer:serve": "node scripts/benchmark/serve-viewer.mjs",
+    "results:validate": "node scripts/validate-results.mjs",
+    "scene:ingest": "node scripts/ingest-scene.mjs",
+    "mobile:url": "node scripts/print-mobile-url.mjs",
+    "analysis:sog": "node scripts/analyze-sog-payloads.mjs",
+    "analysis:bottlenecks": "node scripts/classify-bottlenecks.mjs",
+    "analysis:active-envelope": "node scripts/analyze-active-splat-envelope.mjs",
+    "convert:kaliurang-lods": "node scripts/convert/generate-kaliurang-lods.mjs",
+    "matrix:kaliurang": "node scripts/run-kaliurang-matrix.mjs"
+  }
+}

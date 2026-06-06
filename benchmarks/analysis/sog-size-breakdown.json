@@ -1,0 +1,150 @@
+[
+  {
+    "sceneName": "kaliurang",
+    "sourcePath": "C:\\Users\\Lenovo\\Documents\\3D Gaussian research\\datasets\\samples\\kaliurang.sog",
+    "totalSogSize": 17903258,
+    "metaJsonSize": 15377,
+    "licenseTxtSize": 321,
+    "meansLWebpSize": 3538018,
+    "meansUWebpSize": 1025110,
+    "scalesWebpSize": 2673316,
+    "quatsWebpSize": 3373362,
+    "sh0WebpSize": 3566750,
+    "shNCentroidsWebpSize": 1564252,
+    "shNLabelsWebpSize": 2145706,
+    "gaussianCount": 1178520,
+    "bytesPerGaussian": 15.191306,
+    "attributeBytes": 17886514,
+    "shBytes": 7276708,
+    "nonShAttributeBytes": 10609806,
+    "shToNonShAttributeRatio": 0.685847,
+    "shShareOfSog": 0.406446,
+    "sourcePlySize": null,
+    "compressionRatioVsSourcePly": null,
+    "hasSH": true,
+    "shBands": 3,
+    "generator": "LichtFeld Studio",
+    "sogVersion": 2,
+    "entries": [
+      {
+        "name": "license.txt",
+        "compressedSize": 321,
+        "uncompressedSize": 321,
+        "compressionMethod": 0
+      },
+      {
+        "name": "means_l.webp",
+        "compressedSize": 3538018,
+        "uncompressedSize": 3538018,
+        "compressionMethod": 0
+      },
+      {
+        "name": "meta.json",
+        "compressedSize": 15377,
+        "uncompressedSize": 15377,
+        "compressionMethod": 0
+      },
+      {
+        "name": "quats.webp",
+        "compressedSize": 3373362,
+        "uncompressedSize": 3373362,
+        "compressionMethod": 0
+      },
+      {
+        "name": "means_u.webp",
+        "compressedSize": 1025110,
+        "uncompressedSize": 1025110,
+        "compressionMethod": 0
+      },
+      {
+        "name": "sh0.webp",
+        "compressedSize": 3566750,
+        "uncompressedSize": 3566750,
+        "compressionMethod": 0
+      },
+      {
+        "name": "scales.webp",
+        "compressedSize": 2673316,
+        "uncompressedSize": 2673316,
+        "compressionMethod": 0
+      },
+      {
+        "name": "shN_centroids.webp",
+        "compressedSize": 1564252,
+        "uncompressedSize": 1564252,
+        "compressionMethod": 0
+      },
+      {
+        "name": "shN_labels.webp",
+        "compressedSize": 2145706,
+        "uncompressedSize": 2145706,
+        "compressionMethod": 0
+      }
+    ]
+  },
+  {
+    "sceneName": "kaliurang-sh0",
+    "sourcePath": "C:\\Users\\Lenovo\\Documents\\3D Gaussian research\\datasets\\processed\\kaliurang\\variants\\kaliurang.sh0.sog",
+    "totalSogSize": 14071473,
+    "metaJsonSize": 10245,
+    "licenseTxtSize": 0,
+    "meansLWebpSize": 3531792,
+    "meansUWebpSize": 923268,
+    "scalesWebpSize": 2669932,
+    "quatsWebpSize": 3277838,
+    "sh0WebpSize": 3657700,
+    "shNCentroidsWebpSize": 0,
+    "shNLabelsWebpSize": 0,
+    "gaussianCount": 1178520,
+    "bytesPerGaussian": 11.939953,
+    "attributeBytes": 14060530,
+    "shBytes": 3657700,
+    "nonShAttributeBytes": 10402830,
+    "shToNonShAttributeRatio": 0.351606,
+    "shShareOfSog": 0.259937,
+    "sourcePlySize": null,
+    "compressionRatioVsSourcePly": null,
+    "hasSH": true,
+    "shBands": 0,
+    "generator": "splat-transform v2.5.2",
+    "sogVersion": 2,
+    "entries": [
+      {
+        "name": "means_l.webp",
+        "compressedSize": 3531792,
+        "uncompressedSize": 3531792,
+        "compressionMethod": 0
+      },
+      {
+        "name": "means_u.webp",
+        "compressedSize": 923268,
+        "uncompressedSize": 923268,
+        "compressionMethod": 0
+      },
+      {
+        "name": "quats.webp",
+        "compressedSize": 3277838,
+        "uncompressedSize": 3277838,
+        "compressionMethod": 0
+      },
+      {
+        "name": "scales.webp",
+        "compressedSize": 2669932,
+        "uncompressedSize": 2669932,
+        "compressionMethod": 0
+      },
+      {
+        "name": "sh0.webp",
+        "compressedSize": 3657700,
+        "uncompressedSize": 3657700,
+        "compressionMethod": 0
+      },
+      {
+        "name": "meta.json",
+        "compressedSize": 10245,
+        "uncompressedSize": 10245,
+        "compressionMethod": 0
+      }
+    ]
+  }
+]

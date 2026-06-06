@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+viewer/dist/
+
+# Local benchmark outputs
+benchmarks/results/*.json
+benchmarks/results/*.csv
+benchmarks/results/*.png
+benchmarks/results/*.webp
+benchmarks/results/*.log
+!benchmarks/results/.gitkeep
+
+# Large local datasets/assets
+datasets/raw/
+datasets/processed/
+datasets/local/
+datasets/samples/*.sog
+viewer/public/scenes/
+!viewer/public/scenes/README.md
+viewer/public/assets/scenes/
+!viewer/public/assets/
+!viewer/public/assets/README.md
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

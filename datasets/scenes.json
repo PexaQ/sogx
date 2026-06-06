@@ -1,0 +1,44 @@
+[
+  {
+    "sceneName": "kaliurang",
+    "type": "property-indoor",
+    "sourcePath": "C:\\Users\\Lenovo\\Documents\\3D Gaussian research\\datasets\\samples\\kaliurang.sog",
+    "publicAssetUrl": "/assets/scenes/kaliurang/scene.sog",
+    "assetKind": "bundled-sog",
+    "fileSizeBytes": 17903258,
+    "sha256": "a6310167ad40ead5573db74f5231be7f1fed9a8999b85ed64d19d647ad830a75",
+    "splatCount": 1178520,
+    "hasSH": true,
+    "hasLOD": false,
+    "license": "Title: Kaliurang Valley - D.I Yogyakarta\nAuthor: DroneKu.id (https://superspl.at/user?id=droneku_id)\nSource: https://superspl.at/scene/8b599966\nLicense: CC Attribution (Creative Commons Attribution)\nLicense URL: http://creativecommons.org/licenses/by/4.0/\nRequirements: Author must be credited. Commercial use is allowed.",
+    "sourceNotes": "Local user-provided bundled SOG scene for Phase 2 Baseline A harness validation.",
+    "createdAt": "2026-06-06T13:30:26.851Z",
+    "ingestionStatus": "ingested-copied",
+    "conversionCommands": [],
+    "metadataNotes": [
+      "generator=LichtFeld Studio",
+      "sogVersion=2"
+    ]
+  },
+  {
+    "sceneName": "kaliurang-sh0",
+    "type": "property-indoor-sh0",
+    "sourcePath": "C:\\Users\\Lenovo\\Documents\\3D Gaussian research\\datasets\\processed\\kaliurang\\variants\\kaliurang.sh0.sog",
+    "publicAssetUrl": "/assets/scenes/kaliurang-sh0/scene.sog",
+    "assetKind": "bundled-sog",
+    "fileSizeBytes": 14071473,
+    "sha256": "fad2a778342dc9aaf2480d4364ebed26e4ad8223a6cd26601c2f49ee940f5e9e",
+    "splatCount": 1178520,
+    "hasSH": true,
+    "hasLOD": false,
+    "license": "Derived from kaliurang CC BY 4.0 source; SH0-only SOG generated with SplatTransform --filter-harmonics 0.",
+    "sourceNotes": "SOG-X Experiment C artifact: SH0-only derived variant for payload/runtime comparison. Not a new format.",
+    "createdAt": "2026-06-06T13:58:41.560Z",
+    "ingestionStatus": "ingested-copied",
+    "conversionCommands": [],
+    "metadataNotes": [
+      "generator=splat-transform v2.5.2",
+      "sogVersion=2"
+    ]
+  }
+]

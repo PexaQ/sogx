@@ -1,0 +1,17 @@
+ply
+format ascii 1.0
+element vertex 6
+property float x
+property float y
+property float z
+property float opacity
+property float scale_0
+property float scale_1
+property float scale_2
+end_header
+0 1.2 0 4 -3 -3 -3
+0 1.2 2 3 -3 -3 -3
+4 1.2 0 2 -3 -3 -3
+0 1.2 -6 1 -4 -4 -4
+-4 1.2 0 1 -4 -4 -4
+0 -4 0 -2 -5 -5 -5

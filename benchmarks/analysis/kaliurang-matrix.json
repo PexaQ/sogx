@@ -1,0 +1,22 @@
+[
+  {
+    "group": "A_baselineA_bundled",
+    "label": "kaliurang_baselineA_bundled_sog_default",
+    "scene": "kaliurang",
+    "asset": "/assets/scenes/kaliurang/scene.sog",
+    "mode": "baselineA",
+    "resultName": "kaliurang_baselineA_bundled_sog_default",
+    "duration": 30,
+    "status": "ready",
+    "url": "http://localhost:4173/run?scene=kaliurang&asset=%2Fassets%2Fscenes%2Fkaliurang%2Fscene.sog&mode=baselineA&duration=30&autoStart=true&autoExport=server&resultEndpoint=%2Fapi%2Fsave-run&route=orbit-demo&captureScreenshot=true&resultName=kaliurang_baselineA_bundled_sog_default"
+  },
+  {
+    "group": "B_baselineB_streamed",
+    "label": "kaliurang_baselineB_streamed_sog_default",
+    "asset": "",
+    "mode": "baselineB",
+    "url": "",
+    "status": "missing-streamed-asset",
+    "note": "No lod-meta.json found. Run scripts/convert/generate-kaliurang-lods.mjs --execute true first."
+  }
+]

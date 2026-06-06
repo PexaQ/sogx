@@ -1,0 +1,12 @@
+{
+  "name": "kaliurang-overview",
+  "units": "meters",
+  "duration": 30,
+  "keyframes": [
+    { "t": 0, "position": [0, 8, 14], "target": [0, 0, 0], "fov": 65 },
+    { "t": 7.5, "position": [12, 6, 0], "target": [0, 0, 0], "fov": 65 },
+    { "t": 15, "position": [0, 10, -14], "target": [0, 0, 0], "fov": 65 },
+    { "t": 22.5, "position": [-12, 6, 0], "target": [0, 0, 0], "fov": 65 },
+    { "t": 30, "position": [0, 8, 14], "target": [0, 0, 0], "fov": 65 }
+  ]
+}
